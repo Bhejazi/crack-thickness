@@ -15,7 +15,7 @@ from PIL import Image
 from colorama import Fore, Style
 
 #%%
-def load_images(path, voxel_size):
+def load_images(path):
     folder_info = os.listdir(path)
     print(Fore.MAGENTA + Style.NORMAL + "Loading images..")
     
@@ -33,7 +33,7 @@ def load_images(path, voxel_size):
       
     return images
 
-def data_from_images(images, crack_pix_val):
+def data_from_images(images, crack_pix_val, voxel_size):
     mm2um = 1000
     #m2um = mm2um * 1000
     
@@ -67,7 +67,7 @@ print(Fore.MAGENTA + Style.BRIGHT + "What is the voxel size? (in \u03BCm)" + For
 voxel_size = float(input("-> "))
 print("\n")
 
-images = load_images(path, voxel_size)
+images = load_images(path)
 
 print("\n")
 print(Fore.MAGENTA + Style.NORMAL + "Calculating pixel values..")
@@ -115,7 +115,7 @@ crack_pix_val = float(input("-> "))
 print("\n")
 print(Fore.MAGENTA + Style.NORMAL + "Calculating pixel coordinates..")
 
-pnts_crack = data_from_images(images, crack_pix_val)   
+pnts_crack = data_from_images(images, crack_pix_val, voxel_size)   
 
 #%%
 # Eliminate some outliers
