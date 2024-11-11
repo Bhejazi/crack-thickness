@@ -33,9 +33,7 @@ def load_images(path):
       
     return images
 
-def data_from_images(images, crack_pix_val, voxel_size):
-    mm2um = 1000
-    #m2um = mm2um * 1000
+def data_from_images(images, crack_pix_val):
     
     crack_images = np.zeros_like(images, dtype=int)
     crack_x, crack_y, crack_z = [], [], []
@@ -115,7 +113,7 @@ crack_pix_val = float(input("-> "))
 print("\n")
 print(Fore.MAGENTA + Style.NORMAL + "Calculating pixel coordinates..")
 
-pnts_crack = data_from_images(images, crack_pix_val, voxel_size)   
+pnts_crack = data_from_images(images, crack_pix_val)   
 
 #%%
 # Eliminate some outliers
