@@ -59,3 +59,9 @@ The program accepts segmented `.tif` images of the crack or feature being analyz
 - In the end you will be asked if you would like to save the output figure and to enter the save path. The output figure is saved as a `.pdf` file.
 
   You can also decide to try another binsize and optimize the output or complete the analysis.
+
+## Citation
+
+Hejazi et. al. (2025), "Fatigue Crack Segmentation and Characterization of Additively Manufactured Ti-6Al-4V Using X-Ray Computed Tomography". Fatigue Fract Eng Mater Struct, 48: 204-216.
+
+DOI: https://doi.org/10.1111/ffe.14489
