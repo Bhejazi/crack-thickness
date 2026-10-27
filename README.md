@@ -1,6 +1,6 @@
 ## Description
 
-This is an interactive command line Python code to analyze and quantify segmented crack images obatianed from X-ray computed tomography data.
+This software is intended for the analysis and quantification of segmented crack images obatianed from X-ray computed tomography data.
 
 In principle this code can also be used on any other segmented image where the user would like to see a color map of the feature thickness or height.
 
@@ -22,7 +22,7 @@ Create the environment (Python 3.12 from `.python-version`, dependencies pinned 
 ```shell
 setup_venv.bat
 ```
-On Windows the venv is placed on the local disk at `%LOCALAPPDATA%\crack-thickness\.venv`, not in the project folder. If the project lives on a network drive, a venv in the project folder takes minutes to import numpy/scipy; a local one takes seconds. Without uv, the script falls back to `python -m venv` + `pip`. The run scripts below call setup automatically if the venv is missing.
+On Windows the venv is placed on the local disk at `%LOCALAPPDATA%\crack-thickness\.venv`, not in the project folder. Without uv, the script falls back to `python -m venv` + `pip`. The run scripts below call setup automatically if the venv is missing.
 
 On macOS / Linux, `uv sync` creates `.venv` in the project folder.
 
