@@ -1,0 +1,17 @@
+[project]
+name = "crack-thickness"
+version = "2.0.0"
+description = "Crack thickness from segmented XCT image stacks (binned max-min and tilt-corrected continuous columns)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "colorama",
+    "matplotlib",
+    "numpy",
+    "pillow",
+    "scipy",
+]
+
+[tool.uv]
+package = false
